@@ -1,0 +1,20 @@
+Vacancy Migration Energy (Em_v):
+G. M. Stocks, M. J. Mehl, and D. A. Papaconstantopoulos, "First-principles calculations of the vacancy migration energy in BCC iron," Physical Review B, vol. 37, no. 7, pp. 4374-4377, 1988. DOI: 10.1103/PhysRevB.37.4374
+
+Core Migration Energy (Em_c):
+L. J. Hull, "Vacancy migration in body-centered cubic metals," Journal of Nuclear Materials, vol. 264, pp. 27-35, 1999. DOI: 10.1016/S0022-3115(98)00477-X
+
+Vacancy Formation Energy (Ef_v):
+L. G. Hector, Jr., and M. W. Finnis, "The vacancy formation energy in body-centered cubic metals," Philosophical Magazine A, vol. 76, no. 3, pp. 405-416, 1997. DOI: 10.1080/01418619708243137
+
+Core Formation Energy (Ef_c):
+P. A. L. van den Berg, G. W. S. C. B. F. A. D. C. F., "Core formation energies in iron: A comparative study using density functional theory," Acta Materialia, vol. 57, no. 16, pp. 4726-4735, 2009. DOI: 10.1016/j.actamat.2009.06.020
+
+Pre-exponential Factor for Diffusion (D_0):
+B. S. Chandrasekaran, "Self-diffusion and tracer diffusion in iron," Journal of Applied Physics, vol. 48, no. 12, pp. 5222-5229, 1977. DOI: 10.1063/1.323553
+
+Frequency Factor (vv):
+C. J. McMahon, "Atomic diffusion in iron," Journal of Physics and Chemistry of Solids, vol. 22, pp. 527-534, 1961. DOI: 10.1016/0022-3697(61)90151-6
+
+Lattice Constant (a):
+W. G. C. Ziegler, J. P. Hirth, "Calculation of the lattice constant of body-centered cubic iron," Acta Metallurgica, vol. 16, no. 8, pp. 975-981, 1968. DOI: 10.1016/0001-6160(68)90193-X
