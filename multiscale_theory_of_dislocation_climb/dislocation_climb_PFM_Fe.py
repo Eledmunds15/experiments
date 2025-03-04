@@ -1,3 +1,6 @@
+# From: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.115.265501
+
+# Import Libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import math
@@ -137,15 +140,15 @@ def plot_results_unscaled():
 
     # Plot the results
     plt.figure(figsize=(8, 6))
-    plt.plot(d_j_values_log, climb_rate_results_log_1, label='E_c_v = 0.2eV', color='red', linestyle='-', marker='o', markersize=2)
-    plt.plot(d_j_values_log, climb_rate_results_log_2, label='E_c_v = 0.4eV', color='blue', linestyle='-', marker='o', markersize=2)
-    plt.plot(d_j_values_log, climb_rate_results_log_3, label='E_c_v = 0.6eV', color='green', linestyle='-', marker='o', markersize=2)
-    plt.plot(d_j_values_log, climb_rate_results_log_4, label='E_c_v = 0.8eV', color='purple', linestyle='-', marker='o', markersize=2)
-    plt.plot(d_j_values_log, climb_rate_results_log_5, label='E_c_v = 1.0eV', color='orange', linestyle='-', marker='o', markersize=2)
+    plt.plot(d_j_values_log*1E9, climb_rate_results_log_1, label='E_c_v = 0.2eV', color='red', linestyle='-', marker='o', markersize=2)
+    plt.plot(d_j_values_log*1E9, climb_rate_results_log_2, label='E_c_v = 0.4eV', color='blue', linestyle='-', marker='o', markersize=2)
+    plt.plot(d_j_values_log*1E9, climb_rate_results_log_3, label='E_c_v = 0.6eV', color='green', linestyle='-', marker='o', markersize=2)
+    plt.plot(d_j_values_log*1E9, climb_rate_results_log_4, label='E_c_v = 0.8eV', color='purple', linestyle='-', marker='o', markersize=2)
+    plt.plot(d_j_values_log*1E9, climb_rate_results_log_5, label='E_c_v = 1.0eV', color='orange', linestyle='-', marker='o', markersize=2)
 
     # Set the x-axis to logarithmic scale
     plt.xscale('log')
-    plt.xlim([min(d_j_values_log), max(d_j_values_log)])
+    plt.xlim([min(d_j_values_log*1E9), max(d_j_values_log*1E9)])
 
     plt.axhline(y=climb_rate_eq()*1E9, color='black', linestyle='-', label='Equilibrium Climb Velocity')  # Change y, color, and style as needed
 
@@ -155,11 +158,13 @@ def plot_results_unscaled():
     plt.grid(True, which='minor', axis='both', linestyle=':', linewidth=0.7, alpha=0.5)  # Mini grid style
 
     # Labels and title
-    plt.xlabel('Inter-jog Distance (d_j) [m]', fontsize=12)
+    plt.xlabel('Inter-jog Distance (d_j) [nm]', fontsize=12)
     plt.ylabel('Climb Rate (v) [nm/s]', fontsize=12)
     plt.title('Climb Rate vs Inter-jog Distance (Unscaled)', fontsize=14)
     plt.legend()
     
+    plt.savefig('unscaled_Fe_plot.png', dpi=500)
+
     # Show the plot
     plt.show()
 
